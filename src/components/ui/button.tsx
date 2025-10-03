@@ -22,10 +22,11 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
       },
       size: {
-        default: "h-9 px-4 py-2 has-[>svg]:px-3",
-        sm: "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
-        lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
-        icon: "size-9",
+        sm: "h-8 px-3 rounded-md text-xs gap-1.5 has-[>svg]:px-2.5",
+        default: "h-9 px-4 py-2 rounded-md text-sm has-[>svg]:px-3",
+        lg: "h-11 px-6 rounded-lg text-base gap-2 has-[>svg]:px-4",
+        xl: "h-14 px-8 rounded-lg text-lg gap-2.5 has-[>svg]:px-6",
+        icon: "size-9 rounded-md flex items-center justify-center",
       },
     },
     defaultVariants: {
@@ -33,7 +34,7 @@ const buttonVariants = cva(
       size: "default",
     },
   }
-)
+);
 
 function Button({
   className,
